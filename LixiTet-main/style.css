@@ -1,0 +1,39 @@
+.wrapper {
+  background-image: url("bg-tet.png");
+  position: relative;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* Đảm bảo chiều cao bằng chiều cao của màn hình */
+  display: flex; /* Sử dụng flexbox để căn chỉnh phần tử con */
+  flex-direction: column; /* Hiển thị các phần tử con dọc theo chiều dọc */
+  justify-content: center; /* Căn chỉnh các phần tử con theo chiều dọc */
+  align-items: center; /* Căn chỉnh các phần tử con theo chiều ngang */
+}
+
+/* Thêm margin-top để phân cách nội dung từ phần trên của màn hình */
+.wrapper > * {
+  margin-top: 20px;
+}
+
+
+#no {
+  position: absolute;
+  display: inline-block;
+  left: 35%;
+  top: 50vh;
+  -webkit-transition: all 0.1s ease-out;
+  padding: 20px;
+}
+
+#yes {
+  position: absolute;
+  display: inline-block;
+  left: 60%;
+  top: 50vh;
+  -webkit-transition: all 0.3s ease-out;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+}
